@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FERRETERIA</title>
+  <style>
+    /* Estilos CSS  */
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+    
+  
+    <h2><font color='red'>PRODUCTO</font></h2>
+    <table>
+  <form action="insertar.php" method="POST">
+    <label for="productoId"><font color='grenn'>productoId:</font></label>
+    <input type="text" id="productoId" name="productoId" required>
+
+    <label for="nombre">nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="precio">precio:</label>
+    <input type="number" id="precio" name="precio" step="0.01" required>
+
+    
+    <label for="imagen">seleccionar imagen:</label>
+    <input type="file" id="imagen" name="imagen" required><br><br>
+    <input type="submit" value="subir"><br><br>
+
+
+<!--
+  <label for="imagen">imagen:</label>
+    <input type="text" id="imagen" name="imagen" required><br><br>
+-->
+
+    GUARDAR<input type="submit" value="Guardar">
+
+  </table><br><br>
+    
+  
+  </form>
+  <table>
+
+  <form action="eliminar.php" method="POST">
+    
+    productoId:<input type="number"  id="productoId" name="productoId"><br><br>
+    ELIMINAR<input type="submit" value="eliminar" id="productoId" >
+
+</form><br><br>
+<table>
+  <form action="modificar.php" method="POST">
+    <label for="productoId">productoId:</label>
+    <input type="text" id="productoId" name="productoId" required>
+
+    <label for="nombre">nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="precio">precio:</label>
+    <input type="number" id="precio" name="precio" step="0.01" required>
+
+    <label for="imagen">imagen:</label>
+    <input type="text" id="imagen" name="imagen" required><br><br>
+
+    MODIFICAR<input type="submit" value="modificar" id="modificarId" ><br><br>
+
+  </table><br><br>
+</form><br><br>
+
+  <table>
+    <form action="mostrar.php" method="POST">
+      
+  
+      mostrar<input type="submit" value="mostrar">
+  
+    </table><br><br>
+  
+
+</table>
+
+
+</body>
+</html>
